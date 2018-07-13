@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "huangjiehong-react-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -90,5 +90,11 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.2",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "sass-loader": "^7.0.3"
   }
 }

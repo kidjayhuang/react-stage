@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+%dialog {
+  @extend %boxcenter;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+  z-index: 19;
+}
+%boxcenter {
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+
+%box-vertical {
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+}
+
+%box-middle {
+   display: -webkit-box;
+   -webkit-box-align: center;
+ }
+
+
+
+%middle {
+  position: absolute;
+  top:50%;
+  -webkit-transform: translate(0,-50%);
+}
+
+%fixedFull {
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index: 29;
+}
+
+
+
+
+
+
+
+

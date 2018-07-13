@@ -1,0 +1,17 @@
+@import 'src/style/common';
+.bottom-tabs {
+    width: 100vw;
+    height: r(50);
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    background-color: #eee;
+    line-height: r(50);
+    text-align: center;
+    >ul {
+        display: flex;
+        li{
+            flex: 1;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@import 'src/style/common';
+.home-page{
+  // background-color: red;
+  >img{
+    width: r(100/2);
+    display: block;
+  }
+  .img{
+    width: 100px;
+    height: 100px;
+    background: url(./images/bingzhang.jpg) no-repeat;
+    background-size: contain;
+  }
+}
