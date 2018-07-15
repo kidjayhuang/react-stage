@@ -10,8 +10,17 @@
     text-align: center;
     >ul {
         display: flex;
-        li{
+        >li {
             flex: 1;
+            display: flex;
+            a {
+                width: 100%;
+                &.active {
+                    color: red;
+                }
+            }
         }
     }
 }
+
+// link hover active  visited
