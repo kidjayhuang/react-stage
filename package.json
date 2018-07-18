@@ -35,6 +35,8 @@
     "react": "^16.4.1",
     "react-dev-utils": "^5.0.1",
     "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
     "resolve": "1.6.0",
     "style-loader": "0.19.0",
     "sw-precache-webpack-plugin": "0.11.4",
@@ -92,9 +94,13 @@
     "extends": "react-app"
   },
   "devDependencies": {
+    "babel-polyfill": "^6.26.0",
     "node-sass": "^4.9.2",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "remote-redux-devtools": "^0.5.12",
     "sass-loader": "^7.0.3"
   }
 }
