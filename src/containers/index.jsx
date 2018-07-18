@@ -8,8 +8,15 @@ import React from 'react';
 import { Route } from "react-router-dom";
 import Home from "./home";
 import Personal from "./personal";
+import PropTypes from 'prop-types'
 
 export default class Containers extends React.Component {
+    getChildContext() {
+        return { color: 'aaa' };
+    }
+    static childContextTypes = {
+        color: PropTypes.string
+    };
     render() {
         return (
             <React.Fragment>

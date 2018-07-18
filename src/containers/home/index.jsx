@@ -5,19 +5,19 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import oneAction from 'src/actions/oneAction'
 
-
 class Home extends React.Component {
   constructor() {
     super()
     this.state = {}
   }
-  componentWillMount(){
-    console.log(111,this.props.actions)
+
+  componentWillMount() {
+    console.log(111, this.props.actions)
     this.props.actions.updOneTypeCode()
     this.props.actions.updOneInfo()
-
   }
   render() {
+
     return (<React.Fragment>
       <div className="home-page">
         HOME
@@ -29,7 +29,7 @@ class Home extends React.Component {
 }
 
 let mapStateToProps = state => {
-  const {one} = state
+  const { one } = state
   return { one };
 };
 
