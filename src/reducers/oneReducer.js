@@ -21,6 +21,7 @@ function oneInfo(state = initState, {
                 typeCode: data
             }
         case UPD_ONE_INFO:
+
             return { ...state,
                 oneInfo: {
                     ...state.oneInfo,
@@ -28,6 +29,8 @@ function oneInfo(state = initState, {
                 }
             }
         default:
+    console.log('oneInfo')
+
             return state;
     }
 }

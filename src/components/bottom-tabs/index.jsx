@@ -11,7 +11,8 @@ import PropTypes from 'prop-types'
 
 export default class Tabs extends React.Component {
     static contextTypes = {
-        color: PropTypes.string
+        color: PropTypes.string,
+        store: PropTypes.object,
     };
     render() {
         let tabs = [
