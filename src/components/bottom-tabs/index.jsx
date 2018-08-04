@@ -18,7 +18,6 @@ export default class Tabs extends React.Component {
             { title: '首页', path: '/home' },
             { title: '个人中心', path: '/personal' },
         ]
-        console.log('context:', this.context)
 
 
         return (

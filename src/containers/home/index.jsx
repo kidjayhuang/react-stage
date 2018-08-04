@@ -12,7 +12,6 @@ class Home extends React.Component {
   }
 
   componentWillMount() {
-    console.log(111, this.props.actions)
     this.props.actions.updOneTypeCode()
     this.props.actions.updOneInfo()
   }
@@ -22,7 +21,7 @@ class Home extends React.Component {
       <div className="home-page">
         HOME
       </div>
-      <Tabs />
+      <Tabs {...this.props}/>
     </React.Fragment>
     );
   }
