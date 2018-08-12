@@ -1,0 +1,16 @@
+{
+    "presets": [
+        "react-app",
+        "react-optimize", [
+            "env", {
+                "modules": false,
+                "debug": false,
+                "useBuiltIns": false,
+                "targets": {
+                    "browsers": "defaults"
+                }
+            }
+        ],
+        "stage-0"
+    ]
+}

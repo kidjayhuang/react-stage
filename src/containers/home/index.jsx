@@ -1,34 +1,43 @@
-import React from 'react';
-import './index.scss'
+import React from "react";
+import "./index.scss";
 import Tabs from "components/bottom-tabs";
-import { bindActionCreators } from 'redux'
-import { connect } from 'react-redux'
-import oneAction from 'src/actions/oneAction'
+import { bindActionCreators } from "redux";
+import { connect } from "react-redux";
+import oneAction from "src/actions/oneAction";
 
 class Home extends React.Component {
   constructor() {
-    super()
-    this.state = {}
+    super();
+    this.state = {};
   }
 
   componentWillMount() {
-    this.props.actions.updOneTypeCode()
-    this.props.actions.updOneInfo()
+    console.log(111, this.props.actions);
+    this.props.actions.updOneTypeCode();
+    this.props.actions.updOneInfo();
+
+
+ 
+  }
+  aa = ()=>{
+    console.log(11**7)
   }
   render() {
-
-    return (<React.Fragment>
-      <div className="home-page">
-        HOME
-      </div>
-      <Tabs {...this.props}/>
-    </React.Fragment>
+    let {props} = this
+    console.log(111,props)
+    return (
+      <React.Fragment>
+        <div className="home-page">
+          <span onClick={this.aa}>HOME</span>
+        </div>
+        <Tabs />
+      </React.Fragment>
     );
   }
 }
 
 let mapStateToProps = state => {
-  const { one } = state
+  const { one } = state;
   return { one };
 };
 
@@ -38,4 +47,7 @@ let mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Home);

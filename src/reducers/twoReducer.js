@@ -27,6 +27,8 @@ function twoInfo(state = initState, {
                 }
             }
         default:
+    console.log('twoInfo')
+
             return state;
     }
 }

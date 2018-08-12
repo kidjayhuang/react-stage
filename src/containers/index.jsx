@@ -20,10 +20,10 @@ export default class Containers extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <Route exact path={`/home/:test`} render={props => { return (<Home {...props} />) }} />
+                <Route exact path={`/`} render={props => { return (<Home {...props} />) }} />
+                <Route exact path={`/home`} render={props => { return (<Home {...props} />) }} />
                 <Route path={`/personal`} render={props => { return (<Personal {...props} />) }} />
             </React.Fragment >
-
         )
 
         // Route 渲染组件的三种方式
